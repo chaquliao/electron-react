@@ -21,4 +21,6 @@ npm i wait-on --s-d
 但是我们不需要打开浏览器，下面来处理  
 * 跨平台设置脚本，使用第三方插件cross-env（在启动react项目时，不打开浏览器） 
 npm i cross-env --s-d  
- `"dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\""`  
+ ```JSON
+ "dev": "concurrently \"wait-on http://localhost:3000 && electron .\" \"cross-env BROWSER=none npm start\""
+ ```
