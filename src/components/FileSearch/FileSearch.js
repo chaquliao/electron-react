@@ -6,7 +6,7 @@ import "./FileSearch.scss";
 import propTypes from "prop-types";
 import useKeyPress from "../../hooks/useKeyPress";
 
-const FileSearch = ({ title, onFileSearch }) => {
+const FileSearch = ({ title, onFileSearch, onCloseFileSearch }) => {
   const [inputActive, setInputActive] = useState(false);
   const [value, setValue] = useState("");
 
@@ -18,6 +18,7 @@ const FileSearch = ({ title, onFileSearch }) => {
   const closeSearch = e => {
     setInputActive(false);
     setValue("");
+    onCloseFileSearch();
   };
 
   useEffect(() => {

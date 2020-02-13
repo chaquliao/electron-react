@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.left-panel {
+  min-height: 100vh !important;
+  position: relative;
+}
+
+.button-group {
+  width: 100%;
+  position: absolute !important;
+  bottom: 0px;
+}
+
+.right-panel {
+  text-align: left;
+}
